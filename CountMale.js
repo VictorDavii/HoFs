@@ -4,15 +4,13 @@ const data = require('./dataBase');
 
 function countGender(gender){
  
-    if(gender == 'M' || gender == 'F'){
+  if(gender === 'M' || gender === 'F'){
+    
+    return data.characters.filter((character) => character.gender === gender).length
 
-        return data.characters.filter((character) => {
-            return character.gender === gender
-        })
-
-    }else{
-        'ERROR'
-    }
+  }else{
+    return 'Valor inválido'
+  }
 
 }
 

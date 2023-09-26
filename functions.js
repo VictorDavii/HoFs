@@ -8,6 +8,7 @@ function exemplo(num1, num2){
 
 console.log(exemplo(2,10));
 
+
 //=====================================
 
 //FUNÇÃO ANÔNIMA 
