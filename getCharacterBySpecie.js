@@ -7,3 +7,4 @@ function getBySpecie(id){
 
 }
 console.log(getBySpecie(4))
+
