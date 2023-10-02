@@ -27,17 +27,6 @@ console.log(arrowFunction(2, 10));
 
 //======================================
 
-//HOFS - higher order functions
-
-
-const timeGoku = ['GOKU', 'GOHAN', 'BULMA', 'MESTRE KAME'];
-
-timeGoku.forEach((personagem) => {
-    
-
-    console.log `DBZ - ${personagem}`
-})
-
 
 
 

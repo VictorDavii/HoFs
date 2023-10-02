@@ -8,12 +8,13 @@ function isAndroide(specie) {
     let namesPush = []; 
     if(data.species.some((specieSome) => specieSome.name === specie) === true){
         let findId = data.species.find((findId) => findId.name === specie)
-        for(let index = 0; index < data.characters.length; index++){
-            if(findId.id === data.characters[index].speciesId){ 
-                namesPush.push(data.characters[index].name)
+        data.characters.forEach((character) => { 
+            if(findId.id === character.speciesId){
+                namesPush.push(character.name)        
             }
+            return namesPush
+        })
         }
-    }
 
     else {
         console.log('Espécie não encontrada!')
